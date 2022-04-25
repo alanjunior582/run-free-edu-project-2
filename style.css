@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1c1d20;
+    font-family: sans-serif;
+    color: white;
+}
+.container {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    background-color: #131314;
+    padding: 1em;
+    line-height: 3em;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 15px;
+    margin-bottom: 10%;
+    padding-bottom: 1.5em;
+}
+
+/* HomePage */
+#firstContainer p{
+    color: grey;
+}
+#firstContainer button{
+    padding: 0.5em 0.7em;
+    margin-right: 0.6em;
+    background-color: darkslateblue;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+}
+#firstContainer button:hover {
+    background-color: #1c1d20;
+    color: white;
+}
+/* HomePage */
+
+/* Game */
+#gameContainer h4{
+    font-weight: 520;
+    font-size: 1.1rem;
+}
+#Rock , #Paper , #Scissor {
+    padding: 0.5em 0.7em;
+    margin-right: 0.6em;
+    background-color: darkslateblue;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+}
+#Rock:hover , #Paper:hover , #Scissor:hover {
+    background-color: #584f91;
+    border: 1px solid #584f91;
+}
+/* Game */
+
+/* Calculator */
+.calculator {
+    width: 75%;
+    position: relative;
+    display: grid;
+    margin: 1em 0em 1em;
+    border: 1px solid #131314;
+}
+.calculator .value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.calculator span {
+    display: grid;
+    width: 100px;
+    height: 60px;
+    color: whitesmoke;
+    background-color: #1c1d20;
+    place-items: center;
+    border: 1px solid #252629;
+}
+.calculator span:hover {
+    background-color: darkslateblue;
+}
+.calculator span.clear {
+    grid-column: span 2;
+    width: 200px;
+    background-color: cyan;
+    color: #131314;
+}
+.calculator span.plus {
+    grid-row: span 2;
+    height: 120px;
+}
+.calculator span.equal {
+    background-color: yellow;
+    color: #131314;
+}
+/* Calculator */
+
+/* BMI */
+#demo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: yellow;
+}
+#bmiContainer label{
+    font-size: 0.9rem;
+}
+#bmiContainer input {
+    margin-left: 2em;
+    height: 2em;
+    padding: 0.8em 0em 0.8em 0.8em;
+}
+.bmiSubmitButton {
+    padding: 0.5em 0.7em;
+    margin-right: 0.6em;
+    color: white;
+    background-color: darkslateblue;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+}
+.bmiSubmitButton:hover {
+    background-color: #584f91;
+    border: 1px solid #584f91;
+}
+/* BMI */
+
+/* Etch A Sketch */
+#easContainer .buttons {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1em 0em 1em 0em;
+}
+#easContainer .buttons button {
+    padding: 0.6em 0.7em;
+    margin-right: 1em;
+    background-color: darkslateblue;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+}
+#easContainer .buttons button:hover {
+    background-color: #584f91;
+    border: 1px solid #584f91;
+}
+#easContainer .screen {
+    display: grid;
+    width: 100%;
+    height: 300px;
+    border: 2px solid darkslateblue;
+}
+/* Etch A Sketch */
+
+/* Timer */
+.stopwatchContainer {
+    text-align: center;
+}
+.stopWatch {
+    color: cyan;
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0.4em;
+}
+.stopwatchContainer button {
+    padding: 0.5em 0.7em;
+    margin-right: 0.6em;
+    color: white;
+    background-color: darkslateblue;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+}
+.stopwatchContainer button:hover {
+    background-color: #584f91;
+    border: 1px solid #584f91;
+}
+/* Timer */
+
+/* Other */
+button{
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 600;
+}
+.goBackButton {
+    border: none;
+    background-color: #131314;
+    color: darkslateblue;
+    text-decoration: underline;
+}
+.hide {
+    display: none;
+}
+/* Other */
+
+/* Media */
+@media only screen and (max-width:500px) {
+    .container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #gameContainer h4 {
+        font-size: 1rem;
+    }
+}
+/* Media */

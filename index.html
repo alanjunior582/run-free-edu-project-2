@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Have Fun!</title>
+</head>
+<body>
+
+    <!-- HomePage -->
+    <div id="firstContainer" class="container">
+        <h1>Choose One!</h1>
+        <p>--Categories--</p>
+        <button id="gameButton">Rock Paper Scissor</button>
+        <button id="calculatorButton">Calculator</button>
+        <button id="bmiCalculatorButton">BMI Calculator</button>
+        <button id="easButton">Etch A Sketch</button>
+        <button id="timerButton">Stop Watch</button>
+    </div>
+    <!-- HomePage -->
+
+    <!-- Game -->
+    <div id="gameContainer" class="container hide">
+        <h1>Rock Paper Scissor!</h1>
+        <button id="goBackButton1" class="goBackButton">Go Back</button>
+        <h4>Computer: <span id="computerChoice" style="font-size: 1.1rem; font-weight: 520;"></span></h4>
+        <h4>User: <span id="userChoice" style="font-size: 1.1rem; font-weight: 520;"></span></h4>
+        <h4>Result: <span id="resultOfGame" style="font-size: 1.1rem; font-weight: 520;"></span></h4>
+        <button id="Rock">Rock</button>
+        <button id="Paper">Paper</button>
+        <button id="Scissor">Scissor</button>
+    </div>
+    <!-- Game -->
+    
+    <!-- Calculator -->
+    <div id="calculatorContainer" class="container hide">
+        <h1>Calculator</h1>
+        <button id="goBackButton2" class="goBackButton">Go Back</button>
+        <form class="calculator" name="calc">
+            <input class="value" type="text" name="txt" readonly="">
+            <span class="num clear" onclick="document.calc.txt.value = ''">c</span>
+            <span class="num" onclick="document.calc.txt.value += '/'">/</span>
+            <span class="num" onclick="document.calc.txt.value += '*'">*</span>
+            <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+            <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+            <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+            <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+            <span class="num" onclick="document.calc.txt.value += '4'">4</span>
+            <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+            <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+            <span class="num plus" onclick="document.calc.txt.value += '+'">+</span>
+            <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+            <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+            <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+            <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+            <span class="num" onclick="document.calc.txt.value += '00'">00</span>
+            <span class="num" onclick="document.calc.txt.value += '.'">.</span>
+            <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+        </form>
+    </div>
+    <!-- Calculator -->
+
+    <!-- BMICalculator -->
+    <div id="bmiContainer" class="container hide">
+        <h1>BMI Calculator</h1>
+        <button id="goBackButton3" class="goBackButton">Go Back</button>
+        <br>
+        <label for="inputFeet" class="marginFeet">Feet</label>
+        <input type="number" id="inputFeet" placeholder="Feet" required>
+        <br>
+        <label for="inputInch">Inches</label>
+        <input type="number" id="inputInch" placeholder="Inch" required>
+        <br>
+        <label for="inputWeight">Weight</label>
+        <input type="number" id="inputWeight" placeholder="Weight" required>
+        <br>
+        <button type="submit" class="bmiSubmitButton" onclick="validateInput()">Submit</button>
+        <br>
+        <p>Your BMI Result: <span id="demo"></span></p>
+    </div>
+    <!-- BMICalculator -->
+
+    <!-- Etch A Sketch -->
+    <div id="easContainer" class="container hide">
+        <h1>Etch A Sketch</h1>
+        <button id="goBackButton4" class="goBackButton">Go Back</button>
+        <div class="buttons">
+            <button id="clear" type="button">Clear</button>
+            <button id="black" type="button">Black</button>
+            <button id="colors" type="button">Colors</button>
+            <button id="resize" type="button">Resize</button>
+        </div>
+        <div class="screen">
+
+        </div>
+    </div>
+    <!-- Etch A Sketch -->
+
+    <!-- Timer -->
+    <div id="timerContainer" class="container hide">
+        <h1>Stop Watch</h1>
+        <button id="goBackButton5" class="goBackButton">Go Back</button>
+        <div class="stopwatchContainer">
+            <div class="stopWatch">00:00:00</div>
+            <div>
+                <button type="button" class="startButton">Start</button>
+                <button type="button" class="pauseButton">Pause</button>
+                <button type="button" class="continueButton">Continue</button>
+                <button type="button" class="restartButton">Restart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Timer -->
+
+    <script src="script.js"></script>
+</body>
+</html>
